@@ -1,0 +1,32 @@
+# Executed results
+
+Means over 3 independent pair experiments per trial; 30 trials.
+CI columns in CSV are approximate 95% normal confidence intervals across trial means.
+
+| Condition | Algorithm | Delay ms | Loss % | Goodput Mbps | PDR % | Hops | QoS cost |
+|---|---|---:|---:|---:|---:|---:|---:|
+| normal | baseline | 4.8223 | 0.2278 | 0.2395 | 99.7722 | 2.3333 | 0.1711 |
+| normal | proposed | 4.8223 | 0.2278 | 0.2395 | 99.7722 | 2.3333 | 0.1711 |
+| moderate | baseline | 9.8057 | 6.8089 | 0.2237 | 93.1911 | 2.3333 | 0.7448 |
+| moderate | proposed | 8.5490 | 0.3267 | 0.2392 | 99.6733 | 3.3333 | 0.3114 |
+| high | baseline | 47.2155 | 21.3000 | 0.1889 | 78.7000 | 2.3333 | 2.0879 |
+| high | proposed | 8.5490 | 0.3267 | 0.2392 | 99.6733 | 3.3333 | 0.3114 |
+
+## Interpretation
+- normal: delay reduction 0.00%; loss change +0.00 percentage points; hop change +0.00.
+- moderate: delay reduction 12.82%; loss change -6.48 percentage points; hop change +1.00.
+- high: delay reduction 81.89%; loss change -20.97 percentage points; hop change +1.00.
+
+These results apply to the configured synthetic external congestion model, not a real network.
+Throughput is delivered cohort payload per offered-traffic duration, not maximum link capacity.
+PDR and loss are complements; goodput is proportional to PDR at fixed offered load.
+
+## Dynamic demonstration
+- Epoch 0 normal baseline: R1 > R2 > R3 > R12
+- Epoch 0 normal proposed: R1 > R2 > R3 > R12
+- Epoch 1 moderate baseline: R1 > R2 > R3 > R12
+- Epoch 1 moderate proposed: R1 > R4 > R5 > R6 > R12
+- Epoch 2 high baseline: R1 > R2 > R3 > R12
+- Epoch 2 high proposed: R1 > R4 > R5 > R6 > R12
+- Epoch 3 normal baseline: R1 > R2 > R3 > R12
+- Epoch 3 normal proposed: R1 > R2 > R3 > R12

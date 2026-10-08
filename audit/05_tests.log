@@ -1,0 +1,10 @@
+test_dynamic_route_changes (test_project.RoutingTests.test_dynamic_route_changes) ... ok
+test_invalid_weights (test_project.RoutingTests.test_invalid_weights) ... ok
+test_lossless_hand_calculation (test_project.RoutingTests.test_lossless_hand_calculation) ... ok
+test_path_optimality_against_exhaustive_search (test_project.RoutingTests.test_path_optimality_against_exhaustive_search) ... ok
+test_reproducibility_and_accounting (test_project.RoutingTests.test_reproducibility_and_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.051s
+
+OK

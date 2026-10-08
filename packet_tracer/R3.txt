@@ -1,0 +1,19 @@
+enable
+configure terminal
+hostname R3
+no ip domain-lookup
+interface GigabitEthernet0/0
+ip address 10.0.13.2 255.255.255.252
+ip ospf cost 30
+no shutdown
+exit
+interface GigabitEthernet0/1
+ip address 10.0.34.1 255.255.255.252
+ip ospf cost 30
+no shutdown
+exit
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+network 192.168.0.0 0.0.255.255 area 0
+end
+write memory

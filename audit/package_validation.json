@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-18T13:28:54.382039+00:00",
+  "status": "PASS",
+  "checks": [
+    "Protected originals unchanged",
+    "Required report sections and documents present",
+    "Summary/sweep tables agree with saved CSV at displayed precision",
+    "Local Markdown links resolve",
+    "All included Python parses",
+    "Clean allowlist excludes virtual environments, caches, old archives and Git metadata"
+  ],
+  "manual": [
+    "Packet Tracer execution, genuine .pkt, genuine screenshots"
+  ]
+}

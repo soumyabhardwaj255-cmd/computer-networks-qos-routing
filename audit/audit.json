@@ -1,0 +1,137 @@
+{
+  "utc": "2026-09-18T13:18:44.477305+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "checks": [
+    {
+      "check": "01_environment.log",
+      "status": "PASS"
+    },
+    {
+      "check": "02_install.log",
+      "status": "PASS"
+    },
+    {
+      "check": "03_pip_check.log",
+      "status": "PASS"
+    },
+    {
+      "check": "04_dependencies.log",
+      "status": "PASS"
+    },
+    {
+      "check": "Python syntax parsing",
+      "status": "PASS"
+    },
+    {
+      "check": "05_tests.log",
+      "status": "PASS"
+    },
+    {
+      "check": "06_reproduction.log",
+      "status": "PASS"
+    },
+    {
+      "check": "Metadata configuration/hash (timestamp intentionally differs)",
+      "status": "PASS"
+    },
+    {
+      "check": "07_figures.log",
+      "status": "PASS"
+    },
+    {
+      "check": "08_consistency.log",
+      "status": "PASS"
+    },
+    {
+      "check": "09_legacy_verifier.log",
+      "status": "PASS"
+    },
+    {
+      "check": "10_prepare.log",
+      "status": "PASS"
+    },
+    {
+      "check": "prepare.py reproduces default config and router files",
+      "status": "PASS"
+    },
+    {
+      "check": "Original source/config/tests/results/figures/abstract unchanged",
+      "status": "PASS"
+    }
+  ],
+  "manual": [
+    "Packet Tracer construction, execution, .pkt and screenshots"
+  ],
+  "reproduced_files": [
+    {
+      "file": "trials.csv",
+      "sha256": "b771c9f42eb7eb4a6c5791204ae51ca86a8a70c7f82d002b59d7467576d70311",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "file": "summary.csv",
+      "sha256": "0b91935824d1c25fea22051ee115a07fd159877a734f64767b5d514e42fc3215",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "file": "paired_differences.csv",
+      "sha256": "b7ab95f477aa1d6f61df216cf0b6dd96bd5c63d040ca7604c8516ef0f1b1b703",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "file": "dynamic_routes.csv",
+      "sha256": "f5a3f933d92bdc6b9779235760c27796fe275e19bef044b3bbf3b23f8e91dd24",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "file": "congestion_sweep.csv",
+      "sha256": "d7a8e948a5dc0f52ff58d1692eb029041f468e5fe834cd6314a15d6b287f7342",
+      "status": "BYTE_IDENTICAL"
+    },
+    {
+      "file": "FINAL_RESULTS.md",
+      "sha256": "c420ec53661c045a913eb6828d220ebed6aef30fcacfbd93171e332d62ff78cb",
+      "status": "BYTE_IDENTICAL"
+    }
+  ],
+  "trial_rows": 540,
+  "figures": [
+    {
+      "file": "delay_ms.png",
+      "byte_identical": true
+    },
+    {
+      "file": "hops.png",
+      "byte_identical": true
+    },
+    {
+      "file": "loss_pct.png",
+      "byte_identical": true
+    },
+    {
+      "file": "pdr_pct.png",
+      "byte_identical": true
+    },
+    {
+      "file": "performance_vs_congestion.png",
+      "byte_identical": true
+    },
+    {
+      "file": "qos_cost.png",
+      "byte_identical": true
+    },
+    {
+      "file": "selected_routes.png",
+      "byte_identical": true
+    },
+    {
+      "file": "throughput_mbps.png",
+      "byte_identical": true
+    },
+    {
+      "file": "topology.png",
+      "byte_identical": true
+    }
+  ],
+  "status": "PASS"
+}

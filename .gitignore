@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local render checks and duplicate extracted submission
+docx_work/
+submission/
+
+# Superseded archives; keep the final project archive
+Assessment6_QoS_Routing.zip
+Packet_Tracer_Manual_Kit.zip
+
+# Local credentials and editor/OS files
+.env
+.env.*
+!.env.example
+.aws/
+.DS_Store
+Thumbs.db
+~$*

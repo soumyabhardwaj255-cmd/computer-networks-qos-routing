@@ -1,0 +1,236 @@
+{
+  "utc": "2026-10-08T11:02:48.034176+00:00",
+  "python": "3.12.14",
+  "config": {
+    "seed": 30806,
+    "trials": 30,
+    "packets": 1000,
+    "packet_bytes": 1200,
+    "packets_per_second": 25,
+    "delay_reference_ms": 20,
+    "loss_reference": 0.1,
+    "congestion_loss_factor": 0.12,
+    "weights": {
+      "delay": 0.4,
+      "loss": 0.3,
+      "utilization": 0.2,
+      "hops": 0.1
+    },
+    "conditions": {
+      "normal": 0.1,
+      "moderate": 0.7,
+      "high": 0.95
+    },
+    "pairs": [
+      [
+        "R1",
+        "R12"
+      ],
+      [
+        "R2",
+        "R12"
+      ],
+      [
+        "R1",
+        "R3"
+      ]
+    ],
+    "positions": {
+      "R1": [
+        0,
+        0
+      ],
+      "R2": [
+        2,
+        0
+      ],
+      "R3": [
+        4,
+        0
+      ],
+      "R12": [
+        6,
+        0
+      ],
+      "R4": [
+        1,
+        2
+      ],
+      "R5": [
+        3,
+        2
+      ],
+      "R6": [
+        5,
+        2
+      ],
+      "R7": [
+        1,
+        -2
+      ],
+      "R8": [
+        3,
+        -2
+      ],
+      "R9": [
+        5,
+        -2
+      ],
+      "R10": [
+        2,
+        3.5
+      ],
+      "R11": [
+        4,
+        3.5
+      ]
+    },
+    "links": [
+      {
+        "a": "R1",
+        "b": "R2",
+        "bandwidth_mbps": 10,
+        "delay_ms": 1,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": true
+      },
+      {
+        "a": "R2",
+        "b": "R3",
+        "bandwidth_mbps": 10,
+        "delay_ms": 1,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": true
+      },
+      {
+        "a": "R3",
+        "b": "R12",
+        "bandwidth_mbps": 10,
+        "delay_ms": 1,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": true
+      },
+      {
+        "a": "R1",
+        "b": "R4",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R4",
+        "b": "R5",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R5",
+        "b": "R6",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R6",
+        "b": "R12",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R1",
+        "b": "R7",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R7",
+        "b": "R8",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R8",
+        "b": "R9",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R9",
+        "b": "R12",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R4",
+        "b": "R10",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R10",
+        "b": "R11",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R11",
+        "b": "R6",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R2",
+        "b": "R5",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      },
+      {
+        "a": "R3",
+        "b": "R8",
+        "bandwidth_mbps": 20,
+        "delay_ms": 2,
+        "loss": 0.001,
+        "utilization": 0.15,
+        "core": false
+      }
+    ]
+  },
+  "config_sha256": "b20baf14b11f1e47a12d3a492bc7d1f1714fe052d7c82b48ad6c46dfe053443c"
+}

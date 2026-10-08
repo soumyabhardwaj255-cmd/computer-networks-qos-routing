@@ -1,0 +1,111 @@
+# Complete router commands
+
+Use these unchanged existing configurations on fresh Cisco 2911 routers. Start at Router> after answering no to the setup dialog. See LAB_GUIDE.md for wiring and verification.
+
+## R1
+
+```text
+enable
+configure terminal
+hostname R1
+no ip domain-lookup
+interface GigabitEthernet0/0
+ip address 10.0.12.1 255.255.255.252
+ip ospf cost 10
+no shutdown
+exit
+interface GigabitEthernet0/1
+ip address 10.0.13.1 255.255.255.252
+ip ospf cost 30
+no shutdown
+exit
+interface GigabitEthernet0/2
+ip address 192.168.1.1 255.255.255.0
+ip ospf cost 10
+no shutdown
+exit
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+network 192.168.0.0 0.0.255.255 area 0
+end
+write memory
+```
+
+## R2
+
+```text
+enable
+configure terminal
+hostname R2
+no ip domain-lookup
+interface GigabitEthernet0/0
+ip address 10.0.12.2 255.255.255.252
+ip ospf cost 10
+no shutdown
+exit
+interface GigabitEthernet0/1
+ip address 10.0.24.1 255.255.255.252
+ip ospf cost 10
+no shutdown
+exit
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+network 192.168.0.0 0.0.255.255 area 0
+end
+write memory
+```
+
+## R3
+
+```text
+enable
+configure terminal
+hostname R3
+no ip domain-lookup
+interface GigabitEthernet0/0
+ip address 10.0.13.2 255.255.255.252
+ip ospf cost 30
+no shutdown
+exit
+interface GigabitEthernet0/1
+ip address 10.0.34.1 255.255.255.252
+ip ospf cost 30
+no shutdown
+exit
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+network 192.168.0.0 0.0.255.255 area 0
+end
+write memory
+```
+
+## R4
+
+```text
+enable
+configure terminal
+hostname R4
+no ip domain-lookup
+interface GigabitEthernet0/0
+ip address 10.0.24.2 255.255.255.252
+ip ospf cost 10
+no shutdown
+exit
+interface GigabitEthernet0/1
+ip address 10.0.34.2 255.255.255.252
+ip ospf cost 30
+no shutdown
+exit
+interface GigabitEthernet0/2
+ip address 192.168.4.1 255.255.255.0
+ip ospf cost 10
+no shutdown
+exit
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+network 192.168.0.0 0.0.255.255 area 0
+end
+write memory
+```
+
+
